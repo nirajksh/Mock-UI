@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="div">
+        <h2 id="h2">Hello World <span>good Morning</span></h2>
+        <h4 onclick="clikeme(this )">CLick on text</h4> -->
+    </div>
+    <script>
+
+        function clikeme(id){
+            id.innerHTML="OOpps..!!!"
+        }
+        const h2=document.getElementById("h2")
+        console.log(h2.style.backgroundColor="blue")
+
+        const createElement =  document.createElement("h2")
+        createElement.innerHTML="i have created second h2 element"
+        h2.appendChild(createElement)
+
+        const body = document.getElementsByTagName("body")
+        const h3 = document.createElement("h3")
+        h3.innerHTML="one more element"
+        h2.appendChild(h3)
+
+        function sum (){
+            return 5*8
+        }
+
+        h3.append(sum())
+        const div = document.getElementById("div")
+
+        const h1= document.createElement("h1")
+        h1.innerText="i have created h1 element"
+
+        div.appendChild(h1)
+
+    
+        
+        
+
+
+        
+        
+
+
+    </script>
+    
+</body>
+
+ <html lang="en">
+  <head>
+    <script>
+      //run this function when the document is loaded
+      window.onload = () => {
+        // create a couple of elements in an otherwise empty HTML page
+        const heading = document.createElement("h1");
+        const headingText = document.createTextNode("Big Head!");
+        heading.appendChild(headingText);
+        document.body.appendChild(heading);
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
